@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Remote Sell Essence | AI Prompt Generator</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Create perfect AI prompts for any goal with Remote Sell Essence’s free AI Prompt Generator. Designed for creators, entrepreneurs, and marketers." />
+  <meta name="keywords" content="AI prompt generator, Remote Sell Essence, digital marketing, virtual assistant tools, automation, content creation, AI writing" />
+  <meta name="author" content="Remote Sell Essence" />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Remote Sell Essence | AI Prompt Generator" />
+  <meta property="og:description" content="A free smart tool to help you craft powerful AI prompts for writing, business, or creativity." />
+  <meta property="og:image" content="https://storage.googleapis.com/msgsndr/Ntuzm9KYhbK3ZHUvw3Dv/media/671bc74b70dc33cbae304d6a.png" />
+  <meta property="og:url" content="https://remotesellessenceos.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/msgsndr/Ntuzm9KYhbK3ZHUvw3Dv/media/671bc74b70dc33cbae304d6a.png" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
   <style>
     :root {
-      --primary: #7b5cf3;
-      --secondary: #f8b6e0;
-      --bg: #fdfbff;
-      --text-dark: #2b2b2b;
-      --text-light: #555;
+      --primary: #8a5cf5;
+      --secondary: #f7b1d9;
+      --accent: #f3e8ff;
+      --bg: #ffffff;
+      --text-dark: #222;
+      --text-light: #666;
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
       margin: 0;
       padding: 2rem;
@@ -22,15 +42,14 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      color: var(--text-dark);
     }
 
     .container {
       background: var(--bg);
-      max-width: 650px;
       width: 100%;
+      max-width: 700px;
       border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
       padding: 2.5rem;
       animation: fadeIn 0.8s ease;
     }
@@ -40,10 +59,23 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    h1 {
-      text-align: center;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 0.6rem;
+      border-radius: 10px;
+    }
+
+    header h1 {
       color: var(--primary);
-      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      margin: 0;
     }
 
     p.subtext {
@@ -56,6 +88,7 @@
       font-weight: 600;
       display: block;
       margin-top: 1rem;
+      color: var(--text-dark);
     }
 
     input, select {
@@ -63,13 +96,13 @@
       padding: 0.8rem;
       border: 1px solid #ccc;
       border-radius: 10px;
-      margin-top: 0.5rem;
+      margin-top: 0.4rem;
       font-size: 0.95rem;
     }
 
     button {
       width: 100%;
-      margin-top: 1.5rem;
+      margin-top: 1.6rem;
       padding: 1rem;
       font-size: 1rem;
       background: var(--primary);
@@ -80,13 +113,11 @@
       transition: background 0.3s;
     }
 
-    button:hover {
-      background: #6c4be0;
-    }
+    button:hover { background: #7147da; }
 
     .output {
       margin-top: 2rem;
-      background: #f8f5ff;
+      background: var(--accent);
       border: 1px solid #e3d9fa;
       border-radius: 12px;
       padding: 1.2rem;
@@ -94,8 +125,8 @@
     }
 
     .output h3 {
-      margin-top: 0;
       color: var(--primary);
+      margin-top: 0;
     }
 
     #finalPrompt {
@@ -108,7 +139,7 @@
     .tip {
       color: var(--text-light);
       font-style: italic;
-      margin-top: 0.5rem;
+      margin-top: 0.6rem;
     }
 
     .copy-btn {
@@ -125,25 +156,40 @@
       transition: background 0.3s;
     }
 
-    .copy-btn:hover {
-      background: #f59dd5;
-    }
+    .copy-btn:hover { background: #f59dd5; }
 
-    .footer {
+    footer {
       text-align: center;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       font-size: 0.85rem;
       color: var(--text-light);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem; }
+      header h1 { font-size: 1.3rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>✨ AI Prompt Generator</h1>
-    <p class="subtext">Created by <strong>Remote Sell Essence</strong> to craft perfect prompts for any purpose</p>
+    <header>
+      <img src="https://storage.googleapis.com/msgsndr/Ntuzm9KYhbK3ZHUvw3Dv/media/671bc74b70dc33cbae304d6a.png" alt="Remote Sell Essence Logo" />
+      <h1>AI Prompt Generator</h1>
+    </header>
+
+    <p class="subtext">Craft powerful AI prompts for writing, business, learning, or creativity — powered by Remote Sell Essence.</p>
 
     <label>🎯 What’s your goal or topic?</label>
-    <input type="text" id="goal" placeholder="e.g., create a social media calendar">
+    <input type="text" id="goal" placeholder="e.g., plan a 30-day email marketing campaign" />
 
     <label>👩‍💼 Choose the AI role</label>
     <select id="role">
@@ -155,8 +201,7 @@
       <option value="creative storyteller">Creative storyteller</option>
       <option value="custom">Custom (type below)</option>
     </select>
-
-    <input type="text" id="customRole" placeholder="If custom, type your own role">
+    <input type="text" id="customRole" placeholder="If custom, type your own role" />
 
     <label>🗣️ Tone or Style</label>
     <select id="tone">
@@ -185,20 +230,22 @@
       <p class="tip" id="promptTip"></p>
     </div>
 
-    <p class="footer">© 2025 Remote Sell Essence. All rights reserved.</p>
+    <footer>
+      <p>© 2026 Remote Sell Essence | <a href="https://remotesellessence.my.canva.site/">About</a> • <a href="https://shop.remotesellessenceos.com/contact">Contact</a></p>
+    </footer>
   </div>
 
   <script>
     function generatePrompt() {
-      const goal = document.getElementById('goal').value.trim();
-      let role = document.getElementById('role').value;
-      const customRole = document.getElementById('customRole').value.trim();
-      const tone = document.getElementById('tone').value;
-      const format = document.getElementById('format').value;
-      if (role === 'custom' && customRole) role = customRole;
+      const goal = document.getElementById("goal").value.trim();
+      let role = document.getElementById("role").value;
+      const customRole = document.getElementById("customRole").value.trim();
+      const tone = document.getElementById("tone").value;
+      const format = document.getElementById("format").value;
+      if (role === "custom" && customRole) role = customRole;
 
       if (!goal) {
-        alert('Please enter your goal or topic.');
+        alert("Please enter your goal or topic.");
         return;
       }
 
@@ -206,19 +253,19 @@
 Write the response in a ${tone} tone and present it as a ${format}. 
 Include clear structure, actionable insights, and creativity.`;
 
-      const tip = `💡 Tip: Add more context (target audience, length, or platform) for even better results.`;
+      const tip = `💡 Tip: Add more context (target audience, timeframe, or platform) for even better results.`;
 
-      document.getElementById('finalPrompt').textContent = prompt;
-      document.getElementById('promptTip').textContent = tip;
-      document.getElementById('output').style.display = 'block';
+      document.getElementById("finalPrompt").textContent = prompt;
+      document.getElementById("promptTip").textContent = tip;
+      document.getElementById("output").style.display = "block";
     }
 
     function copyPrompt() {
-      const text = document.getElementById('finalPrompt').textContent;
+      const text = document.getElementById("finalPrompt").textContent;
       navigator.clipboard.writeText(text);
-      const btn = document.querySelector('.copy-btn');
-      btn.textContent = 'Copied!';
-      setTimeout(() => btn.textContent = 'Copy', 1500);
+      const btn = document.querySelector(".copy-btn");
+      btn.textContent = "Copied!";
+      setTimeout(() => (btn.textContent = "Copy"), 1500);
     }
   </script>
 </body>
